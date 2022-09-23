@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700;800;900&display=swap');
+/* Lato para textos p y Monserrat para hs*/
+
+:root {
+    --darkblue: #2c3e50;
+    --green: #18bc9c;
+    --black: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, il {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3, h4 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    margin: 0 0 1rem 0;
+}
+
+il {
+    margin: 0 0.5rem 0 0;
+}
+
+p, label {
+    font-family: 'Lato', sans-serif;
+}
+
+picture img {
+    width: 100%;
+}
+
+button {
+    padding: 0.6rem;
+    border-radius: 0.25rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.header, .footer {
+    background: var(--darkblue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
+    color: #FFF;
+}
+
+.footer {
+    flex-direction: column;
+    padding: 2rem 8rem;
+}
+
+.portfolio, .contact {
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+}
+
+.main, .about {
+    background: var(--green);
+    padding: 4rem 8rem;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main img {
+    height: 15rem;
+    margin: 1rem;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.about-container {
+    display: flex;
+    width: 50%;
+    gap: 2.5rem;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.download {
+    background: none;
+    color: #FFF;
+    border: 2px solid;
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+}
+
+.more-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 0 0 2rem 0;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.footer a {
+    color: var(--green)
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.icons picture {
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.star hr {
+    width: 45px;
+    height: 3px;
+    border: none;
+}
+
+.star i {
+    margin: 0 0.3rem;
+}
+
+.white {
+    background: #FFF;
+}
+
+.black {
+    background: var(--black);
+}
